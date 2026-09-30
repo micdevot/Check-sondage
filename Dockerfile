@@ -8,7 +8,7 @@ COPY package*.json ./
 RUN npm ci --no-audit --no-fund
 
 # Vite build arguments (injected at build time into client bundle)
-ARG VITE_SUBMIT_URL=https://api.checkapp.ci/api/v1/survey/submissions
+ARG VITE_SUBMIT_URL=https://check.startup.ci/api/v1/survey/submissions
 ENV VITE_SUBMIT_URL=$VITE_SUBMIT_URL
 
 # Copy source code and build
